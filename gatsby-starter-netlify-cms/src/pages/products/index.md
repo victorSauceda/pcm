@@ -8,33 +8,23 @@ description: >-
   Our world-class team of commercial cleaning professionals offers fast, efficient, and affordable commercial cleaning solutions. There is no job too large or too small for our team, and we welcome the opportunity to assess your cleaning needs and exceed your expectations.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/janiPic.jpg
+      title: this is a test
       text: >
-        We sell red and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
+        People's Choice Maintenance offers a wide range of office cleaning that will fulfill your businesses needs. We offer office cleaning in the greater Seattle area. Our professional cleaning staff are reliable and always leaves your office spotless and ready for the next day.
+        Our office cleaning services vary depending on our client's needs. Our general office cleaning services include sweeping, mopping, vacuuming, dusting, and kitchen cleaning. No office cleaning job is too big or too small for People's Choice Maintenance.
+    - image: /img/floorPic.jpg
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
+        People's Choice Maintenance can strip, seal, wax, polish  and high-speed buff specific flooring materials. Floors we service include, but not limited to; Terrazzo, VCT, vinyl, ceramic, granite, laminate, hard surface, concrete and rubber as well as tile and grout.
+    - image: /img/windowPic2.jpg
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
+        People's Choice Maintenance offers full-scale interior and exterior window cleaning. With the use of new and advance technology we are able to clean multi-story buildings in a more safe and cost effective way than typical window cleaning companies. We also offer hard-water build up removal, with our scale build up removal we can have your old worn out windows looking new again.
+    - image: /img/pressurePic.jpg
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        The Curb Appeal and Clean Appearance of your company, can reflect the pride and commitment you have to your customers. Using People's Choice Maintenance is a smart low cost preventive maintenance solution to this problem. With our high output hot water and steam equipment, we are more than capable of tackling the dirtiest jobs.
+    - image: /img/carpetPic.jpg
+      text: >
+        People's Choice Maintenance effectively can shampoo, steam-clean, vacuum extract, stain and odor removal from carpet and any type of upholstery.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
