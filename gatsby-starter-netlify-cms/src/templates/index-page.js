@@ -7,6 +7,10 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import Layout from "../components/Layout";
 // import Features from "../components/Features";
 // import BlogRoll from "../components/BlogRoll";
+let iconStyle = {
+  marginRight: "2rem",
+  color: "DodgerBlue"
+};
 
 export const IndexPageTemplate = ({
   image,
@@ -88,7 +92,7 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Button>jkljklfd</Button>
+
                 <Container>
                   <Row
                     style={{
@@ -129,6 +133,7 @@ export const IndexPageTemplate = ({
                         We don't treat you like just "another account". To us,
                         you're our business partner.
                       </h4>
+                      <Button>Request A FREE Quote</Button>
                     </Col>
                     <Col
                       xs={12}
@@ -143,7 +148,7 @@ export const IndexPageTemplate = ({
                     >
                       <h4>
                         <i
-                          style={{ marginRight: "1rem" }}
+                          style={iconStyle}
                           className="fas fa-check-square"
                         ></i>
                         <strong>Available 24/7/365</strong>
@@ -153,7 +158,7 @@ export const IndexPageTemplate = ({
                         <br />
                         <br />{" "}
                         <i
-                          style={{ marginRight: "1rem" }}
+                          style={iconStyle}
                           className="fas fa-check-square"
                         ></i>{" "}
                         No Long-Term Contracts
@@ -163,7 +168,7 @@ export const IndexPageTemplate = ({
                         <br />
                         <br />{" "}
                         <i
-                          style={{ marginRight: "1rem" }}
+                          style={iconStyle}
                           className="fas fa-check-square"
                         ></i>{" "}
                         Registered & Bonded to service any job!
@@ -173,7 +178,7 @@ export const IndexPageTemplate = ({
                         <br />
                         <br />{" "}
                         <i
-                          style={{ marginRight: "1rem" }}
+                          style={iconStyle}
                           className="fas fa-check-square"
                         ></i>{" "}
                         Certified & Trained Staff <br />
