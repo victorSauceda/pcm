@@ -142,22 +142,41 @@ export const IndexPageTemplate = ({
                       }}
                     >
                       <h4>
-                        Z Available 24/7/365
+                        <i
+                          style={{ marginRight: "1rem" }}
+                          className="fas fa-check-square"
+                        ></i>
+                        <strong>Available 24/7/365</strong>
                         <br />
                         <br /> We're fully staffed to handle your requests and
                         concerns at any time!
                         <br />
-                        <br /> Z No Long-Term Contracts
+                        <br />{" "}
+                        <i
+                          style={{ marginRight: "1rem" }}
+                          className="fas fa-check-square"
+                        ></i>{" "}
+                        No Long-Term Contracts
                         <br />
                         <br /> We earn your business and loyalty through our
                         work!
                         <br />
-                        <br /> Z Registered & Bonded to service any job!
+                        <br />{" "}
+                        <i
+                          style={{ marginRight: "1rem" }}
+                          className="fas fa-check-square"
+                        ></i>{" "}
+                        Registered & Bonded to service any job!
                         <br />
                         <br /> We're a local family-owned cleaning company ready
                         to handle any job!
                         <br />
-                        <br /> Z Certified & Trained Staff <br />
+                        <br />{" "}
+                        <i
+                          style={{ marginRight: "1rem" }}
+                          className="fas fa-check-square"
+                        ></i>{" "}
+                        Certified & Trained Staff <br />
                         <br /> Our staff goes through rigorous screening &
                         training to ensure the highest service to our clients!
                         <br />
