@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Best Janitorial Services in the Greater Seattle Area
-image: /img/jani-background.jpg
+image: /img/office1.jpg
 heading: Best Janitorial Services in the Greater Seattle Area
 subheading: Relatively low and affordable prices with quality service
 mainpitch:
@@ -9,7 +9,7 @@ mainpitch:
   description: >
     As a commercial cleaning company in Washington with nearly 30 years of experience, Peoples Choice Maintenance provides comprehensive office cleaning services for businesses of all sizes and types that you can rely on.
 description: >-
-  You can feel confident your facility will be properly maintained. This level of cleanliness reflects the professional image you want to project to your clients and employees at all times. People's Choice offers more than other office cleaning companies and corporate cleaning services.
+  You can feel confident your facility will be properly maintained. This level of cleanliness reflects the professional imaged you want to project to your clients and employees at all times. People's Choice offers more than other office cleaning companies and corporate cleaning services.
 
 # intro:
 #   blurbs:

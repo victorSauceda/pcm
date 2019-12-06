@@ -185,6 +185,33 @@ export default class Index extends React.Component {
                   </button>
                 </div>
               </form>
+              <div style={{ marginTop: "5rem", textAlign: "center" }}>
+                <h1>Chief Executive Officer</h1>
+                <div>
+                  <h3 style={{ fontFamily: "cursive" }}>Ray Sauceda</h3>
+                </div>
+                <hr />
+                <div>
+                  <h1>Address</h1>
+                  <h3 style={{ fontFamily: "cursive" }}>
+                    123 west ave
+                    <br />
+                    Seattle, WA 98065
+                  </h3>
+                </div>
+                <hr />
+                <div>
+                  <h1>Phone</h1>
+                  <h3 style={{ fontFamily: "cursive" }}>206.737.8383</h3>
+                </div>
+                <hr />
+                <div>
+                  <h1>Email</h1>
+                  <h4 style={{ fontFamily: "cursive" }}>
+                    peopleschoicemaintenance@pcm.com
+                  </h4>
+                </div>
+              </div>
             </div>
           </div>
         </section>

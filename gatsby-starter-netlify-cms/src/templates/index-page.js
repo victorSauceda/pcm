@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
+import { Container, Row, Col, Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
+// import Features from "../components/Features";
+// import BlogRoll from "../components/BlogRoll";
 
 export const IndexPageTemplate = ({
   image,
@@ -86,6 +88,90 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
+                <Button>jkljklfd</Button>
+                <Container>
+                  <Row
+                    style={{
+                      marginLeft: "5%",
+                      marginRight: "5%",
+                      // backgroundColor: "blue",
+                      width: "100%",
+                      overflow: "auto",
+                      color: "white",
+                      height: "auto",
+                      border: ".4rem dotted black"
+                    }}
+                  >
+                    <Col
+                      xs={12}
+                      md={6}
+                      style={{
+                        width: "48%",
+
+                        float: "left",
+                        padding: "2rem"
+                      }}
+                    >
+                      <h1>100% Risk-Free Cleaning Services</h1>
+                      <h4>
+                        Over the years, we've learned what makes a successful
+                        partnership between a cleaning company and a facility
+                        administrator. We know the stresses, pressure, and work
+                        required to upkeep the cleanliness and pristine image of
+                        your facility.
+                        <br />
+                        <br /> For over 40 years ECS, has been committed to
+                        providing the upmost professional commercial cleaning
+                        experience in town. We don't just say it, we guarantee
+                        it!
+                        <br />
+                        <br /> We're a family-owned business, not a franchise.
+                        We don't treat you like just "another account". To us,
+                        you're our business partner.
+                      </h4>
+                    </Col>
+                    <Col
+                      xs={12}
+                      md={6}
+                      style={{
+                        width: "48%",
+                        float: "left",
+                        // backgroundColor: "black",
+                        display: "inline",
+                        padding: "2rem"
+                      }}
+                    >
+                      <h4>
+                        Z Available 24/7/365
+                        <br />
+                        <br /> We're fully staffed to handle your requests and
+                        concerns at any time!
+                        <br />
+                        <br /> Z No Long-Term Contracts
+                        <br />
+                        <br /> We earn your business and loyalty through our
+                        work!
+                        <br />
+                        <br /> Z Registered & Bonded to service any job!
+                        <br />
+                        <br /> We're a local family-owned cleaning company ready
+                        to handle any job!
+                        <br />
+                        <br /> Z Certified & Trained Staff <br />
+                        <br /> Our staff goes through rigorous screening &
+                        training to ensure the highest service to our clients!
+                        <br />
+                        <br />
+                      </h4>
+                      <img
+                        // style={{ marginLeft: "2rem" }}
+                        src="./img/riskFree.jpeg"
+                        alt="customer satisfaction logo"
+                      />
+                    </Col>
+                  </Row>
+                </Container>
+
                 {/* <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">

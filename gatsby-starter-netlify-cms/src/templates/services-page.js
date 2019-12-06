@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+// import Testimonials from "../components/Testimonials";
+// import Pricing from "../components/Pricing";
+// import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export const ServicesPageTemplate = ({
   image,
@@ -43,15 +43,15 @@ export const ServicesPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-7 is-offset-1">
+            <div style={{ textAlign: "center" }}>
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
+              <p style={{ textAlign: "center" }}>{description}</p>
             </div>
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <Features gridItems={intro.blurbs} />
-              <div className="columns">
+              {/* <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
@@ -95,7 +95,7 @@ export const ServicesPageTemplate = ({
                 {pricing.heading}
               </h2>
               <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+              <Pricing data={pricing.plans} />*/}
             </div>
           </div>
         </div>

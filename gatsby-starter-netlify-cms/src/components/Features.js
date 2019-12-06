@@ -18,9 +18,10 @@ const FeatureGrid = ({ gridItems }) => (
             </div>
           </div>
 
-          <div>
-            <h2>{item.title}</h2>
-          </div>
+          <h2 style={{ textAlign: "center", fontFamily: "cursive" }}>
+            {item.title}
+          </h2>
+
           <p>{item.text}</p>
         </section>
       </div>
