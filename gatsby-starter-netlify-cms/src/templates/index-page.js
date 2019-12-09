@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 // import Features from "../components/Features";
 // import BlogRoll from "../components/BlogRoll";
 let iconStyle = {
-  marginRight: "2rem",
+  marginRight: ".5rem",
   color: "DodgerBlue"
 };
 
@@ -134,6 +134,7 @@ export const IndexPageTemplate = ({
                         you're our business partner.
                       </h4>
                       <Button>Request A FREE Quote</Button>
+                      <h2>OR CALL 206.888.8888</h2>
                     </Col>
                     <Col
                       xs={12}
@@ -143,7 +144,7 @@ export const IndexPageTemplate = ({
                         float: "left",
                         // backgroundColor: "black",
                         display: "inline",
-                        padding: "2rem"
+                        padding: "1rem"
                       }}
                     >
                       <h4>
@@ -161,7 +162,7 @@ export const IndexPageTemplate = ({
                           style={iconStyle}
                           className="fas fa-check-square"
                         ></i>{" "}
-                        No Long-Term Contracts
+                        <strong>No Long-Term Contracts</strong>
                         <br />
                         <br /> We earn your business and loyalty through our
                         work!
@@ -171,7 +172,9 @@ export const IndexPageTemplate = ({
                           style={iconStyle}
                           className="fas fa-check-square"
                         ></i>{" "}
-                        Registered & Bonded to service any job!
+                        <strong style={{ display: "inline" }}>
+                          Registered & Bonded to service any job!
+                        </strong>
                         <br />
                         <br /> We're a local family-owned cleaning company ready
                         to handle any job!
@@ -181,7 +184,8 @@ export const IndexPageTemplate = ({
                           style={iconStyle}
                           className="fas fa-check-square"
                         ></i>{" "}
-                        Certified & Trained Staff <br />
+                        <strong>Certified & Trained Staff </strong>
+                        <br />
                         <br /> Our staff goes through rigorous screening &
                         training to ensure the highest service to our clients!
                         <br />
