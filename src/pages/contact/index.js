@@ -2,6 +2,68 @@ import React from "react";
 import { navigate } from "gatsby-link";
 import Layout from "../../components/Layout";
 
+// const form = document.getElementById("contactForm");
+// const url =
+//   "https://lhnsquiohk.execute-api.us-west-2.amazonaws.com/dev/email/send";
+// const toast = document.getElementById("toast");
+// const submit = document.getElementById("submit");
+// function post(url, body, callback) {
+//   var req = new XMLHttpRequest();
+//   req.open("POST", url, true);
+//   req.setRequestHeader("Content-Type", "application/json");
+//   req.addEventListener("load", function() {
+//     if (req.status < 400) {
+//       callback(null, JSON.parse(req.responseText));
+//     } else {
+//       callback(new Error("Request failed: " + req.statusText));
+//     }
+//   });
+//   req.send(JSON.stringify(body));
+// }
+// function success() {
+//   toast.innerHTML =
+//     "Thanks for sending me a message! I'll get in touch with you ASAP. :)";
+//   submit.disabled = false;
+//   submit.blur();
+//   form.name.focus();
+//   form.name.value = "";
+//   form.email.value = "";
+
+//   form.zipcode.value = "";
+//   form.phonenumber.value = "";
+//   form.facilityname.value = "";
+//   form.interestedin.value - "";
+//   form.freq.value = "";
+// }
+// function error(err) {
+//   toast.innerHTML =
+//     "There was an error with sending your message, hold up until I fix it. Thanks for waiting.";
+//   submit.disabled = false;
+//   console.log(err);
+// }
+
+// form.addEventListener("submit", function(e) {
+//   e.preventDefault();
+//   toast.innerHTML = "Sending";
+//   submit.disabled = true;
+
+//   const payload = {
+//     name: form.name.value,
+//     email: form.email.value,
+//     zipcode: form.zipcode.value,
+//     phonenumber: form.phonenumber.value,
+//     facilityname: form.facilityname.value,
+//     interestedin: form.interestedin.value,
+//     freq: form.freq.value
+//   };
+//   post(url, payload, function(err, res) {
+//     if (err) {
+//       return error(err);
+//     }
+//     success();
+//   });
+// });
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -21,15 +83,27 @@ export default class Index extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
+    console.log(
+      encode({
         "form-name": form.getAttribute("name"),
         ...this.state
       })
-    })
-      .then(() => navigate(form.getAttribute("action")))
+    );
+    fetch(
+      "https://lhnsquiohk.execute-api.us-west-2.amazonaws.com/dev/email/send",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: JSON.stringify({
+          "form-name": form.getAttribute("name"),
+          ...this.state
+        })
+      }
+    )
+      .then(res => {
+        console.log(res);
+        navigate(form.getAttribute("action"));
+      })
       .catch(error => alert(error));
   };
 
@@ -41,6 +115,7 @@ export default class Index extends React.Component {
             <div className="content">
               <h1>Contact</h1>
               <form
+                id="contactForm"
                 name="contact"
                 method="post"
                 action="/contact/thanks/"
@@ -178,9 +253,9 @@ export default class Index extends React.Component {
                     </select>
                   </div>
                 </div>
-
+                <div id="toast"></div>
                 <div className="field">
-                  <button className="button is-link" type="submit">
+                  <button id="submit" className="button is-link" type="submit">
                     Send
                   </button>
                 </div>
