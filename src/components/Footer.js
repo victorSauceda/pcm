@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 
 // import logo from "../img/logo.svg";
 import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
-import vimeo from "../img/social/vimeo.svg";
+// import instagram from "../img/social/instagram.svg";
+// import twitter from "../img/social/twitter.svg";
+// import vimeo from "../img/social/vimeo.svg";
 
 const Footer = class extends React.Component {
   render() {
@@ -13,9 +13,9 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           <img
-            src="https://scontent.fsjc1-3.fna.fbcdn.net/v/t1.0-9/10441383_480530265426625_3903660117290727019_n.jpg?_nc_cat=101&_nc_ohc=QosQFKoD8U4AQlS-Qc2BbENiup0eKFlPxUFcRKGUWG9VberDkVhpdz9OA&_nc_ht=scontent.fsjc1-3.fna&oh=7f5e53878e7ecf839e75690d509b874e&oe=5E85D0D5"
+            src="../../img/PCM_logo.png"
             alt="Kaldi"
-            style={{ width: "14em", height: "10em" }}
+            style={{ width: "21rem", height: "auto" }}
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
@@ -70,14 +70,17 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
+                <a
+                  title="facebook"
+                  href="https://www.facebook.com/peopleschoicemaintenance/"
+                >
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="twitter" href="https://twitter.com">
+                {/* <a title="twitter" href="https://twitter.com">
                   <img
                     className="fas fa-lg"
                     src={twitter}
@@ -98,7 +101,7 @@ const Footer = class extends React.Component {
                     alt="Vimeo"
                     style={{ width: "1em", height: "1em" }}
                   />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

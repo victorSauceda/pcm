@@ -18,7 +18,12 @@ const FeatureGrid = ({ gridItems }) => (
             </div>
           </div>
 
-          <h2 style={{ textAlign: "center", fontFamily: "cursive" }}>
+          <h2
+            style={{
+              textAlign: "center",
+              fontFamily: "'Abril Fatface', 'cursive' "
+            }}
+          >
             {item.title}
           </h2>
 

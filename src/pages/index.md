@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Best Janitorial Services in the Greater Seattle Area
-image: /img/office1.jpg
+image: /img/offBack1.jpg
 heading: Best Janitorial Services in the Greater Seattle Area
 subheading: Relatively low and affordable prices with quality service
 mainpitch:

@@ -22,6 +22,10 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix("/")}img/apple-touch-icon.png`}
         />
         <link
+          href="https://fonts.googleapis.com/css?family=Abril+Fatface|Dancing+Script&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
           rel="icon"
           type="image/png"
           href={`${withPrefix("/")}img/favicon-32x32.png`}
