@@ -64,6 +64,9 @@ import { Row, Col } from "react-bootstrap";
 //     success();
 //   });
 // });
+const hrMargin = {
+  marginTop: "36px"
+};
 
 function encode(data) {
   return Object.keys(data)
@@ -134,11 +137,7 @@ export default class Index extends React.Component {
                       </label>
                     </div>
                     <div className="field">
-                      <label
-                        className="label"
-                        htmlFor={"name"}
-                        style={{ fontFamily: "'Dancing Script', 'cursive'" }}
-                      >
+                      <label className="label" htmlFor={"name"}>
                         Your Name:
                       </label>
                       <div className="control">
@@ -153,11 +152,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <label
-                        className="label"
-                        htmlFor={"email"}
-                        style={{ fontFamily: "'Dancing Script', 'cursive'" }}
-                      >
+                      <label className="label" htmlFor={"email"}>
                         Email:
                       </label>
                       <div className="control">
@@ -172,11 +167,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <label
-                        className="label"
-                        htmlFor={"email"}
-                        style={{ fontFamily: "'Dancing Script', 'cursive'" }}
-                      >
+                      <label className="label" htmlFor={"email"}>
                         Zip Code:
                       </label>
                       <div className="control">
@@ -191,11 +182,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <label
-                        className="label"
-                        htmlFor={"email"}
-                        style={{ fontFamily: "'Dancing Script', 'cursive'" }}
-                      >
+                      <label className="label" htmlFor={"email"}>
                         Phone Number:
                       </label>
                       <div className="control">
@@ -210,11 +197,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <label
-                        className="label"
-                        htmlFor={"email"}
-                        style={{ fontFamily: "'Dancing Script', 'cursive'" }}
-                      >
+                      <label className="label" htmlFor={"email"}>
                         Facility Name:
                       </label>
                       <div className="control">
@@ -229,11 +212,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <label
-                        className="label"
-                        htmlFor={"email"}
-                        style={{ fontFamily: "'Dancing Script', 'cursive'" }}
-                      >
+                      <label className="label" htmlFor={"email"}>
                         Interested In:
                       </label>
                       <div className="control">
@@ -258,11 +237,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field">
-                      <label
-                        className="label"
-                        htmlFor={"email"}
-                        style={{ fontFamily: "'Dancing Script', 'cursive'" }}
-                      >
+                      <label className="label" htmlFor={"email"}>
                         Frequency of Service:
                       </label>
                       <div className="control">
@@ -302,42 +277,27 @@ export default class Index extends React.Component {
                     className="border-dotted border-primary"
                     style={{ marginTop: "5rem", textAlign: "center" }}
                   >
-                    <h1 style={{ fontFamily: "'Dancing Script', 'cursive'" }}>
-                      Chief Executive Officer
-                    </h1>
+                    <h1>Chief Executive Officer</h1>
                     <div>
-                      <h3 style={{ fontFamily: "'Abril Fatface', 'cursive' " }}>
-                        Ray Sauceda
-                      </h3>
+                      <h3>Ray Sauceda</h3>
                     </div>
-                    <hr />
+                    {/* <hr style={hrMargin} /> */}
                     <div>
-                      <h1 style={{ fontFamily: "'Dancing Script', 'cursive'" }}>
-                        Address
-                      </h1>
-                      <h3 style={{ fontFamily: "'Abril Fatface', 'cursive' " }}>
-                        123 west ave
+                      <h3>
+                        330 SW 43rd state Suite K #386
                         <br />
-                        Seattle, WA 98065
+                        Renton, WA 98057
                       </h3>
                     </div>
-                    <hr />
-                    <div>
-                      <h1 style={{ fontFamily: "'Dancing Script', 'cursive'" }}>
-                        Phone
-                      </h1>
-                      <h3 style={{ fontFamily: "'Abril Fatface', 'cursive' " }}>
-                        206.737.8383
-                      </h3>
+                    {/* <hr style={hrMargin} /> */}
+                    <div style={hrMargin}>
+                      <h1>Phone</h1>
+                      <h3>(206)313-4797</h3>
                     </div>
-                    <hr />
-                    <div>
-                      <h1 style={{ fontFamily: "'Dancing Script', 'cursive'" }}>
-                        Email
-                      </h1>
-                      <h4 style={{ fontFamily: "'Abril Fatface', 'cursive' " }}>
-                        peopleschoicemaintenance@pcm.com
-                      </h4>
+                    {/* <hr style={hrMargin} /> */}
+                    <div style={hrMargin}>
+                      <h1>Email</h1>
+                      <h4>peopleschoicemaintenance@msn.com</h4>
                     </div>
                   </div>
                 </Col>

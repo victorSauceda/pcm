@@ -89,7 +89,9 @@ export const IndexPageTemplate = ({
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <h3 className="subtitle" style={{ textAlign: "justify" }}>
+                      {mainpitch.description}
+                    </h3>
                   </div>
                 </div>
                 <div className="columns">
@@ -97,15 +99,13 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p>{description}</p>
+                    <h3 style={{ textAlign: "justify" }}>{description}</h3>
                   </div>
                 </div>
 
-                <Container>
+                <Container style={{ margin: "auto" }}>
                   <Row
                     style={{
-                      marginLeft: "5%",
-                      marginRight: "5%",
                       // backgroundColor: "blue",
                       width: "100%",
                       overflow: "auto",
@@ -125,8 +125,7 @@ export const IndexPageTemplate = ({
                       }}
                     >
                       <h1>100% Risk-Free Cleaning Services</h1>
-                      <br />
-                      <h4>
+                      <h4 style={{ textAlign: "justify" }}>
                         Over the years, we've learned what makes a successful
                         partnership between a cleaning company and a facility
                         administrator. We know the stresses, pressure, and work
@@ -197,7 +196,7 @@ export const IndexPageTemplate = ({
                         padding: "2rem"
                       }}
                     >
-                      <h4>
+                      <h4 style={{ textAlign: "justify" }} d>
                         <FontAwesome
                           className="super-crazy-colors"
                           name="check-square"

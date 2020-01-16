@@ -5,11 +5,11 @@ image: /img/offBack1.jpg
 heading: Best Janitorial Services in the Greater Seattle Area
 subheading: Relatively low and affordable prices with quality service
 mainpitch:
-  title: Why People's Choice Maintenance
+  title: Why People's Choice Maintenance Facility Services?
   description: >
     As a commercial cleaning company in Washington with nearly 30 years of experience, Peoples Choice Maintenance provides comprehensive office cleaning services for businesses of all sizes and types that you can rely on.
 description: >-
-  You can feel confident your facility will be properly maintained. This level of cleanliness reflects the professional imaged you want to project to your clients and employees at all times. People's Choice offers more than other office cleaning companies and corporate cleaning services.
+  People's Choice Maintenance is a locally owned company; we’ve been providing commercial cleaning, In the North West Region with the highest quality service since 1992, so to enhance the professional appearance of your business by maintaining your facility with our expert janitorial and cleaning services. Please request a free estimate or, for more information on our customized services, call us at (206) 313-4797 and we will be happy to answer all of your questions.
 
 # intro:
 #   blurbs:

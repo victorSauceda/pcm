@@ -2,6 +2,7 @@
 templateKey: "about-page"
 path: /about
 title: About our values
+image: static/img/aboutUsPageMainPic.jpg
 ---
 
 ### About our Company
