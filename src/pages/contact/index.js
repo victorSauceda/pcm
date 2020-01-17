@@ -297,7 +297,9 @@ export default class Index extends React.Component {
                     {/* <hr style={hrMargin} /> */}
                     <div style={hrMargin}>
                       <h1>Email</h1>
-                      <h4>peopleschoicemaintenance@msn.com</h4>
+                      <h4 style={{ flexWrap: "wrap" }}>
+                        peopleschoicemaintenance@msn.com
+                      </h4>
                     </div>
                   </div>
                 </Col>
