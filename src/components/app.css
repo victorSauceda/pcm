@@ -1,0 +1,66 @@
+.navbar-item img {
+  max-width: 200rem !important ;
+}
+@media screen and (max-width: 800px) {
+  .navbar-item img {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-brand {
+    width: 100% !important;
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: row !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  #linkDiv {
+    display: block !important;
+
+    margin-left: 13rem !important;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 9.35rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  #buttonHelper {
+    display: flex;
+    margin-left: -112px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #buttonHelper {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 800px) {
+  #buttonHelperBig {
+    margin-left: 15rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  #buttonHelperBig {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar-item:first-child {
+    margin-left: -25px;
+    margin-right: 101px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar is-transparent {
+    height: auto;
+  }
+}
