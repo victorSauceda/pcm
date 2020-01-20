@@ -55,7 +55,6 @@
 }
 @media screen and (max-width: 800px) {
   .navbar-item:first-child {
-    margin-left: -25px;
     margin-right: 101px;
   }
 }

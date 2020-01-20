@@ -284,7 +284,7 @@ export default class Index extends React.Component {
                     {/* <hr style={hrMargin} /> */}
                     <div>
                       <h3>
-                        330 SW 43rd state Suite K #386
+                        330 SW 43rd St. Suite K #386
                         <br />
                         Renton, WA 98057
                       </h3>

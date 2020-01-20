@@ -79,7 +79,7 @@ const Navbar = class extends React.Component {
                   Request A FREE Quote
                 </Button>
               </Link>
-              <a href="tel:+12067417626">
+              <a href="tel:+12063134797">
                 <Button
                   className="btn btn-secondary float-right"
                   style={{
@@ -139,7 +139,7 @@ const Navbar = class extends React.Component {
                       Request A FREE Quote
                     </Button>
                   </Link>
-                  <a href="tel:+12067417626">
+                  <a href="tel:+12063134797">
                     <Button
                       className="btn btn-secondary float-right"
                       style={{

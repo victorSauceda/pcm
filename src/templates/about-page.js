@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({
     <section className="section section--gradient">
       <div className="container">
         <Container>
-          <Row>
+          {/* <Row>
             <Col
               className="full-width-image-container margin-top-0"
               style={{
@@ -30,7 +30,7 @@ export const AboutPageTemplate = ({
                 })`
               }}
             ></Col>
-          </Row>
+          </Row> */}
           <Row>
             <Col xs={12} md={4}>
               <Card style={cardStyle}>

@@ -55,8 +55,8 @@ export const IndexPageTemplate = ({
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow: "#0072bc 0.5rem 0px 0px, #0072bc -0.5rem 0px 0px",
-            backgroundColor: "#0072bc",
+            boxShadow: "#22b24c 0.5rem 0px 0px, #22b24c -0.5rem 0px 0px",
+            backgroundColor: "#22b24c",
             color: "white",
             lineHeight: "1",
             padding: "0.25em"
@@ -132,7 +132,7 @@ export const IndexPageTemplate = ({
                         required to upkeep the cleanliness and pristine image of
                         your facility.
                         <br />
-                        <br /> For over 30 years PCM, has been committed to
+                        <br /> For nearly 30 years PCM, has been committed to
                         providing the upmost professional commercial cleaning
                         experience in town. We don't just say it, we guarantee
                         it!
@@ -160,7 +160,7 @@ export const IndexPageTemplate = ({
                       <h2>
                         {" "}
                         <a
-                          href="tel:+12067417626"
+                          href="tel:+12063134797"
                           style={{
                             position: "fixed",
                             right: "0px",
