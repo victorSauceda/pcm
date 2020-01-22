@@ -13,103 +13,100 @@ export const AboutPageTemplate = ({
   image
 }) => {
   const PageContent = contentComponent || Content;
-  const cardStyle = { width: "18rem", marginTop: "1.25rem", height: "33rem" };
+  const cardStyle = {
+    width: "18rem",
+    marginTop: "1.25rem",
+    height: "33rem"
+  };
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <Container>
-          {/* <Row>
-            <Col
-              className="full-width-image-container margin-top-0"
+    <Container>
+      <Row>
+        <Col
+          className="full-width-image-container margin-top-0"
+          style={{
+            backgroundImage: `url(${
+              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })`,
+            maxWidth: "130%"
+          }}
+        ></Col>
+      </Row>
+      <Row>
+        <Col xs={12} md={4} style={{ marginBottom: "3.25rem" }}>
+          <Card style={cardStyle}>
+            <Card.Title className="text-center mt-4">About Us</Card.Title>
+            <Card.Img
               style={{
-                backgroundImage: `url(${
-                  !!image.childImageSharp
-                    ? image.childImageSharp.fluid.src
-                    : image
-                })`
+                width: "13rem",
+                height: "10rem",
+                marginLeft: "3rem",
+                marginTop: "1.125rem"
               }}
-            ></Col>
-          </Row> */}
-          <Row>
-            <Col xs={12} md={4}>
-              <Card style={cardStyle}>
-                <Card.Title className="text-center mt-4">About Us</Card.Title>
-                <Card.Img
-                  style={{
-                    width: "13rem",
-                    height: "10rem",
-                    marginLeft: "3rem",
-                    marginTop: "1.125rem"
-                  }}
-                  variant="top"
-                  src="../img/aboutUs2.png"
-                  alt="something"
-                />
-                <Card.Body>
-                  <Card.Text className="text-justify">
-                    Peoples Choice Maintenance is a locally owned and operated
-                    commercial janitorial services provider. Peoples Choice has
-                    been serving the Puget Sound area for over 30 years.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xs={12} md={4}>
-              <Card style={cardStyle}>
-                <Card.Title className="text-center mt-4">
-                  Our Mission
-                </Card.Title>
-                <Card.Img
-                  variant="top"
-                  src="../img/missionTester1.png"
-                  alt="something"
-                  style={{
-                    width: "13rem",
-                    height: "10rem",
-                    marginLeft: "3rem",
-                    marginTop: "1.125rem"
-                  }}
-                />
-                <Card.Body>
-                  <Card.Text className="text-justify">
-                    Our mission at People's Choice Maintenance is to achieve the
-                    highest level of customer satisfaction and loyalty by
-                    providing and maintaining a clean and healthy working
-                    environment, responding quickly to our customer’s specific
-                    needs and conducting our business with uncompromising
-                    integrity.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xs={12} md={4}>
-              <Card style={cardStyle}>
-                <Card.Title className="text-center mt-4">Our Vision</Card.Title>
-                <Card.Img
-                  variant="top"
-                  src="../img/vision11.png"
-                  alt="something"
-                  height="150"
-                  style={{
-                    width: "13rem",
-                    height: "10rem",
-                    marginLeft: "3rem",
-                    marginTop: "1.125rem"
-                  }}
-                />
-                <Card.Body>
-                  <Card.Text className="text-justify">
-                    Our vision at People's Choice Maintenance is to be
-                    recognized as the premier janitorial provider in the greater
-                    Seattle area of Washington. We strive not to be the biggest,
-                    but to be the best.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          {/* <Row>
+              variant="top"
+              src="../img/aboutUs2.png"
+              alt="something"
+            />
+            <Card.Body>
+              <Card.Text className="text-justify">
+                Peoples Choice Maintenance is a locally owned and operated
+                commercial janitorial services provider. Peoples Choice has been
+                serving the Puget Sound area for over 30 years.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col xs={12} md={4}>
+          <Card style={cardStyle}>
+            <Card.Title className="text-center mt-4">Our Mission</Card.Title>
+            <Card.Img
+              variant="top"
+              src="../img/missionTester1.png"
+              alt="something"
+              style={{
+                width: "13rem",
+                height: "10rem",
+                marginLeft: "3rem",
+                marginTop: "1.125rem"
+              }}
+            />
+            <Card.Body>
+              <Card.Text className="text-justify">
+                Our mission at People's Choice Maintenance is to achieve the
+                highest level of customer satisfaction and loyalty by providing
+                and maintaining a clean and healthy working environment,
+                responding quickly to our customer’s specific needs and
+                conducting our business with uncompromising integrity.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col xs={12} md={4}>
+          <Card style={cardStyle}>
+            <Card.Title className="text-center mt-4">Our Vision</Card.Title>
+            <Card.Img
+              variant="top"
+              src="../img/vision11.png"
+              alt="something"
+              height="150"
+              style={{
+                width: "13rem",
+                height: "10rem",
+                marginLeft: "3rem",
+                marginTop: "1.125rem"
+              }}
+            />
+            <Card.Body>
+              <Card.Text className="text-justify">
+                Our vision at People's Choice Maintenance is to be recognized as
+                the premier janitorial provider in the greater Seattle area of
+                Washington. We strive not to be the biggest, but to be the best.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      {/* <Row>
             <Col xs={12} md={4}>
               <h3 className="text-center">About Us</h3>
               <p>
@@ -138,9 +135,7 @@ export const AboutPageTemplate = ({
               </p>
             </Col>
           </Row> */}
-        </Container>
-      </div>
-    </section>
+    </Container>
   );
 };
 
@@ -152,6 +147,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
+  console.log(post);
 
   return (
     <Layout>
@@ -183,7 +179,7 @@ export const aboutPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 526, quality: 92) {
+            fluid(maxWidth: 3048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
