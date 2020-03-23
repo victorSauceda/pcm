@@ -1,64 +1,68 @@
 .navbar-item img {
   max-width: 200rem !important ;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   .navbar-item img {
     display: flex !important;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   .navbar-brand {
-    width: 100% !important;
     display: flex !important;
+    justify-content: space-between;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   .container {
     flex-direction: row !important;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
+  .navbar-burger {
+    left: 0rem !important;
+    width: 0.85rem !important;
+  }
+}
+@media screen and (max-width: 812px) {
   #linkDiv {
     display: block !important;
-
-    margin-left: 13rem !important;
-    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   #logo {
     width: 9.35rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   #buttonHelper {
     display: flex;
-    margin-left: -112px;
+    margin-top: 5px !important;
+    margin-left: -11px !important;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 812px) {
   #buttonHelper {
     visibility: hidden;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 812px) {
   #buttonHelperBig {
     margin-left: 15rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   #buttonHelperBig {
     visibility: hidden;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   .navbar-item:first-child {
     margin-right: 101px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   .navbar is-transparent {
     height: auto;
   }

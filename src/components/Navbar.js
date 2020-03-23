@@ -43,121 +43,124 @@ const Navbar = class extends React.Component {
         aria-label="main-navigation"
         style={{ height: "4.5rem" }}
       >
-        <div
+        {/* <div
           style={{
             display: "flex !important",
             flexDirection: "row",
             alignItems: "flex-start"
           }}
-          className="container"
-        >
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img
-                id="logo"
-                src="../../img/pcmlogoonly.png"
-                alt="PCM logo"
-                style={{
-                  width: "136px",
-                  height: "auto",
-                  padding: "0px !important"
-                }}
-              />
-            </Link>
-            <div id="buttonHelper">
-              <Link to="/contact">
-                <Button
-                  className="btn btn-secondary"
-                  style={{
-                    color: "white",
-                    backgroundColor: "#0072bc",
-                    boxShadow: "inset 0 0 0 2px #0072bc",
-                    marginTop: "4px",
-                    marginRight: "1.25rem"
-                  }}
-                >
-                  Request A FREE Quote
-                </Button>
-              </Link>
-              <a href="tel:+12063134797">
-                <Button
-                  className="btn btn-secondary float-right"
-                  style={{
-                    color: "white",
-                    backgroundColor: "#0072bc",
-                    boxShadow: "inset 0 0 0 2px #0072bc",
-                    marginTop: "4px",
-                    marginRight: "1.25rem"
-                  }}
-                >
-                  Call Now
-                </Button>
-              </a>
-            </div>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
+        > */}
+        <div className="navbar-brand">
           <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+            data-target="navMenu"
+            onClick={() => this.toggleHamburger()}
           >
-            <div
-              className="navbar-start"
-              style={{ width: "100%", justifyContent: "space-between" }}
-            >
-              <div id="linkDiv" style={{ display: "flex" }}>
-                <Link className="navbar-item" to="/about">
-                  About
-                </Link>
-                <Link className="navbar-item" to="/services">
-                  Services
-                </Link>
+            <span />
+            <span />
+            <span />
+          </div>
+          <Link to="/" className="navbar-item" title="Logo">
+            <img
+              id="logo"
+              src="../../img/pcmlogoonly.png"
+              alt="PCM logo"
+              style={{
+                width: "136px",
+                height: "auto",
+                padding: "0px !important",
+                marginRight: "-9px !important",
+                marginTop: "10px !important"
+              }}
+            />
+          </Link>
+          <div id="buttonHelper">
+            <Link to="/contact">
+              <Button
+                className="btn btn-secondary"
+                style={{
+                  color: "white",
+                  backgroundColor: "#0072bc",
+                  boxShadow: "inset 0 0 0 2px #0072bc",
+                  marginTop: "1px",
+                  marginRight: ".25rem",
+                  fontSize: "small"
+                }}
+              >
+                FREE Quote
+              </Button>
+            </Link>
+            <a href="tel:+12063134797">
+              <Button
+                className="btn btn-secondary float-right"
+                style={{
+                  color: "white",
+                  backgroundColor: "#0072bc",
+                  boxShadow: "inset 0 0 0 2px #0072bc",
+                  marginTop: "1px",
+                  marginRight: ".25rem",
+                  fontSize: "small"
+                }}
+              >
+                Call Now
+              </Button>
+            </a>
+          </div>
+          {/* Hamburger menu */}
+        </div>
+        <div
+          id="navMenu"
+          className={`navbar-menu ${this.state.navBarActiveClass}`}
+        >
+          <div
+            className="navbar-start"
+            style={{ width: "100%", justifyContent: "space-between" }}
+          >
+            <div id="linkDiv" style={{ display: "flex" }}>
+              <Link className="navbar-item" to="/about">
+                About
+              </Link>
+              <Link className="navbar-item" to="/services">
+                Services
+              </Link>
 
-                <Link className="navbar-item" to="/contact">
-                  Contact
+              <Link className="navbar-item" to="/contact">
+                Contact
+              </Link>
+              <div id="buttonHelperBig">
+                <Link to="/contact">
+                  <Button
+                    className="btn btn-secondary"
+                    style={{
+                      color: "white",
+                      backgroundColor: "#0072bc",
+                      boxShadow: "inset 0 0 0 2px #0072bc",
+                      marginTop: "4px",
+                      marginRight: "1.25rem"
+                    }}
+                  >
+                    Request A FREE Quote
+                  </Button>
                 </Link>
-                <div id="buttonHelperBig">
-                  <Link to="/contact">
-                    <Button
-                      className="btn btn-secondary"
-                      style={{
-                        color: "white",
-                        backgroundColor: "#0072bc",
-                        boxShadow: "inset 0 0 0 2px #0072bc",
-                        marginTop: "4px",
-                        marginRight: "1.25rem"
-                      }}
-                    >
-                      Request A FREE Quote
-                    </Button>
-                  </Link>
-                  <a href="tel:+12063134797">
-                    <Button
-                      className="btn btn-secondary float-right"
-                      style={{
-                        color: "white",
-                        backgroundColor: "#0072bc",
-                        boxShadow: "inset 0 0 0 2px #0072bc",
-                        marginTop: "4px",
-                        marginRight: "1.25rem"
-                      }}
-                    >
-                      Call Now
-                    </Button>
-                  </a>
-                </div>
+                <a href="tel:+12063134797">
+                  <Button
+                    className="btn btn-secondary float-right"
+                    style={{
+                      color: "white",
+                      backgroundColor: "#0072bc",
+                      boxShadow: "inset 0 0 0 2px #0072bc",
+                      marginTop: "4px",
+                      marginRight: "1.25rem"
+                    }}
+                  >
+                    Call Now
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
         </div>
+        {/* </div> */}
       </nav>
     );
   }
