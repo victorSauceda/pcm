@@ -44,6 +44,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
       title = _ref.title,
       heading = _ref.heading,
       subheading = _ref.subheading,
+      subhead = _ref.subhead,
       mainpitch = _ref.mainpitch,
       description = _ref.description,
       intro = _ref.intro;
@@ -459,6 +460,8 @@ IndexPageTemplate.propTypes = {
   title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   heading: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   subheading: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  subhead: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+
   mainpitch: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
   description: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   intro: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
@@ -480,6 +483,7 @@ var IndexPage = function IndexPage(_ref2) {
     title: frontmatter.title,
     heading: frontmatter.heading,
     subheading: frontmatter.subheading,
+    subhead: frontmatter.subhead,
     mainpitch: frontmatter.mainpitch,
     description: frontmatter.description,
     intro: frontmatter.intro,

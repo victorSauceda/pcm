@@ -21,6 +21,7 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
+  subhead,
   mainpitch,
   description,
   intro
@@ -76,9 +77,24 @@ export const IndexPageTemplate = ({
         >
           {subheading}
         </h3>
+        <h3
+          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          style={{
+            boxShadow: "#22b24c 0.5rem 0px 0px, #22b24c -0.5rem 0px 0px",
+            backgroundColor: "#22b24c",
+            color: "white",
+            lineHeight: "1",
+            padding: "0.25em"
+          }}
+        >
+          {subhead}
+        </h3>
       </div>
     </div>
-    <section className="section section--gradient">
+    <section
+      className="section section--gradient"
+      style={{ padding: "9px !important" }}
+    >
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -103,7 +119,7 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
 
-                <Container style={{ margin: "auto" }}>
+                <Container style={{ width: "110%" }}>
                   <Row
                     style={{
                       // backgroundColor: "blue",
@@ -146,7 +162,7 @@ export const IndexPageTemplate = ({
                         <Button
                           className="btn btn-secondary"
                           style={{
-                            marginLeft: "5.125rem",
+                            marginLeft: "1.325rem",
                             marginTop: "1rem",
                             color: "white",
                             backgroundColor: "#0072bc",
@@ -249,7 +265,6 @@ export const IndexPageTemplate = ({
                         <br />
                       </h4>
                       <img
-                        style={{ marginLeft: "3.125rem" }}
                         src="./img/riskFree.jpeg"
                         alt="customer satisfaction logo"
                       />
@@ -290,6 +305,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
+  subhead: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -307,6 +323,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        subhead={frontmatter.subhead}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -339,6 +356,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        subhead
         mainpitch {
           title
           description

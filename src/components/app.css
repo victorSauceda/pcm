@@ -5,6 +5,17 @@
   .navbar-item img {
     display: flex !important;
   }
+  .section {
+    padding: 9px !important;
+  }
+  .full-width-image {
+    height: 20.75rem !important;
+  }
+  #navMenu {
+    width: 30%;
+    height: 8rem;
+    background-color: #0072bc;
+  }
 }
 
 @media screen and (max-width: 812px) {
@@ -58,9 +69,12 @@
   }
 }
 @media screen and (max-width: 812px) {
-  .navbar-item:first-child {
-    margin-right: 101px;
+  .navbar-item {
+    color: white !important;
   }
+  /* .navbar-item:first-child {
+    margin-right: 101px;
+  } */
 }
 @media screen and (max-width: 812px) {
   .navbar is-transparent {
