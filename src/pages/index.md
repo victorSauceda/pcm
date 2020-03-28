@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: Best Janitorial Services in the Greater Seattle Area
+title: People's Choice Maintenance
 image: /img/mainImg.jpg
-heading: Best Janitorial Services in the Greater Seattle Area
+heading: People's Choice Maintenance
 subheading: Relatively low and affordable prices with quality service
 subhead: Call Now 206.313.4797
 mainpitch:
