@@ -17,14 +17,6 @@ intro:
       title: Floor Cleaning
       text: >
         People's Choice Maintenance can strip, seal, wax, polish  and high-speed buff specific flooring materials. Floors we service include, but not limited to; Terrazzo, VCT, vinyl, ceramic, granite, laminate, hard surface, concrete and rubber as well as tile and grout.
-    - image: /img/windowPic2.jpg
-      title: Window Cleaning
-      text: >
-        People's Choice Maintenance offers full-scale interior and exterior window cleaning. With the use of new and advance technology we are able to clean multi-story buildings in a more safe and cost effective way than typical window cleaning companies. We also offer hard-water build up removal, with our scale build up removal we can have your old worn out windows looking new again.
-    - image: /img/pressurePic.jpg
-      title: Pressure Washing Treatment
-      text: >
-        The Curb Appeal and Clean Appearance of your company, can reflect the pride and commitment you have to your customers. Using People's Choice Maintenance is a smart low cost preventive maintenance solution to this problem. With our high output hot water and steam equipment, we are more than capable of tackling the dirtiest jobs.
     - image: /img/carpetPic.jpg
       title: Carpet Cleaning
       text: >
